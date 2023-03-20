@@ -34,12 +34,12 @@
     </div> -->
 
     <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: #F2E9E4">
-      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start p-4 p-lg-5">
+      <div class="col-lg-5 d-flex flex-column justify-content-center align-items-start p-4 p-lg-5">
         <h2 class="display-3 text-uppercase lh-1" style="letter-spacing: -3px">About</h2>
-        <h5 class="fw-light py-3">Workshops in Wild Places is an international art teaching initiative developed by Canadian artist and educator Janice Mason Steeves. Travel to remote locations throughout the world to connect with the beauty and power of the wild landscape.</h5>
+        <p class="h5 py-3 pe-4">Workshops in Wild Places is an international art teaching initiative developed by Canadian artist and educator Janice Mason Steeves. Travel to remote locations throughout the world to connect with the beauty and power of the wild landscape.</p>
         <button class="btn btn-dark rounded-5 px-4">more</button>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-7 p-0">
         <img class="h-100 w-100 rounded-5 shadow" style="object-fit: cover" src="https://workshopsinwildplaces.com/assets/img/cornwall-earth-pigments.jpg" alt="...">
       </div>
     </div>
@@ -48,6 +48,7 @@
       <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/jms-wiwp-scotland-banner.jpg') center; background-size: cover">
       </div>
       <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-start p-5">
+        <h5>WiWP</h5>
         <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Scotland</h2>
         <h3 class="fw-bold">Orkney Islands</h3>
         <p class="text-uppercase">May 15-26, 2023</p>
@@ -57,9 +58,10 @@
     
     <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: #9A8C98">
       <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-start p-5">
+        <h5>WiWP</h5>
         <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Italy</h2>
         <h3 class="fw-bold">Vitorchiano</h3>
-        <p class="text-uppercase">September 19-29, 2023</p>
+        <p class="text-uppercase">September 19 - 29, 2023</p>
         <button class="btn btn-dark rounded-5 px-4">more</button>
       </div>
       <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/jms-wiwp-italy-main.jpeg') center; background-size: cover">
@@ -70,18 +72,20 @@
       <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/spain-main.jpg') center; background-size: cover">
       </div>
       <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-start text-light p-5">
+        <h5>WiWP</h5>
         <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Spain</h2>
         <h3 class="fw-bold">Castrillo de los Polvazares</h3>
-        <p class="text-uppercase">October 30-November 9, 2023</p>
+        <p class="text-uppercase">October 30 - November 9, 2023</p>
         <button class="btn btn-light rounded-5 px-4">more</button>
       </div>
     </div>
 
     <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: #22223B">
       <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-light p-5">
+        <h5>WiWP</h5>
         <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Sahara</h2>
         <h3 class="fw-bold">Morocco</h3>
-        <p class="text-uppercase">February 23-March 4, 2024</p>
+        <p class="text-uppercase">February 23 - March 4, 2024</p>
         <button class="btn btn-light rounded-5 px-4">more</button>
       </div>
       <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/sahara-camel-dunes-1.jpg') center; background-size: cover">
@@ -91,7 +95,7 @@
     <div class="row m-3 rounded-5" style="background: #F2E9E4">
       <div class="col-lg-12 text-center p-5">
         <h2 class="display-3 text-uppercase lh-1" style="letter-spacing: -3px;">What People are Saying</h2>
-        <p>Workshops in Wild Places participant testimonials. </p>
+        <p class="fs-5 mb-0">Workshops in Wild Places participant testimonials</p>
       </div>
       <div class="col-lg-4 p-3">
         <div class="p-3 rounded-5 text-light" style="min-height: 550px; background: #22223B">
