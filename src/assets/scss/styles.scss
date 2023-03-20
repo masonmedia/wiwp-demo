@@ -1,8 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
+@import 'animations';
 
 body {
     font-family: Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    background: rgba(0,0,0,0.08);
+    color: #222;
 }
 
 .min-vh-50 {

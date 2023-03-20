@@ -57,7 +57,7 @@
         </div>
       </div> -->
       
-      <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: rgba(0,0,0,0.09)">
+      <div class="row min-vh-75 m-3 p-4 rounded-5 bg-light border shadow-lg">
         <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/jms-wiwp-scotland-banner.jpg') center; background-size: cover">
         </div>
         <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-start p-5">
@@ -81,7 +81,7 @@
         </div>
       </div>
   
-      <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: rgba(0,0,0,0.09)">
+      <div class="row min-vh-75 m-3 p-4 rounded-5 bg-light border shadow-lg">
         <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/spain-main.jpg') center; background-size: cover">
         </div>
         <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-start p-5">
@@ -105,7 +105,7 @@
         </div>
       </div>
   
-      <div class="row m-3 rounded-5" style="background: rgba(0,0,0,0.09)">
+      <div class="row m-3 rounded-5 bg-light border shadow-lg">
         <div class="col-lg-12 text-center p-5">
           <h2 class="display-3 text-uppercase lh-1" style="letter-spacing: -3px;">What People are Saying</h2>
           <p class="fs-5 mb-0">Workshops in Wild Places participant testimonials</p>

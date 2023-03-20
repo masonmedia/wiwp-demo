@@ -12,7 +12,18 @@ const router = useRouter();
     <TheNav></TheNav>
   </header>
 
-  <RouterView />
+  <router-view v-slot="{ Component }">
+    <transition 
+    name="slide-fade"
+    mode="out-in">
+    <!-- <transition 
+    mode="out-in"
+    @before-enter="beforeEnter"
+    @enter="enter"
+    @leave="leave"> -->
+      <component :is="Component" />
+    </transition>
+  </router-view>
 </template>
 
 <style scoped>

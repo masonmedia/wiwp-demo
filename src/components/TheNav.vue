@@ -29,7 +29,7 @@ const router = useRouter();
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
+                <li class="nav-item" data-bs-dismiss="offcanvas">
                     <router-link class="nav-link" v-for="(route, index) in router.options.routes" :key="index"
                     :to="route.path">
                         {{ route.name }}
