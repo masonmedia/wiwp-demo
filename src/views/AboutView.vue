@@ -6,7 +6,7 @@
         <h1 class="display-1 lh-1 fw-bold" style="letter-spacing: -3px;">Connecting artists with the land in remote, <span class="fw-bold" style="color: hotpink">wild</span> locations worldwide.</h1>
         <div class="d-flex mt-3">
           <button class="btn btn-dark rounded-5 me-2 px-4">Upcoming</button>
-          <button class="btn btn-outline-dark rounded-5 px-4">Learn more</button>
+          <button class="btn btn-outline-dark rounded-5 px-4">Learn More</button>
         </div>
       </div>
     </div>
@@ -27,22 +27,35 @@
         <h4 class="col-md-8 py-2">Connecting artists with the land in remote, wild locations worldwide.</h4>
         <div class="d-flex mt-3">
           <button class="btn btn-light rounded-5 me-2 px-4">Upcoming</button>
-          <button class="btn btn-outline-light rounded-5 px-4">Learn more</button>
+          <button class="btn btn-outline-light rounded-5 px-4">Learn More</button>
         </div>
       </div>
       </div>
     </div> -->
 
-    <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: #F2E9E4">
+    <div class="row min-vh-75 m-3 p-4 rounded-5 bg-dark text-light">
+      <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center p-4 p-lg-5">
+        <h2 class="h5">About WiWP</h2>
+        <p class="fs-2 lh-1 my-3">Workshops in Wild Places <span style="color: #a1a1a6">is an international art teaching initiative developed by Canadian artist and educator Janice Mason Steeves. Participants travel to remote locations throughout the world to connect with the beauty and power of the wild landscape through the creative process.</span></p>
+        <div class=" d-flex">
+          <button class="btn btn-outline-light rounded-5 px-4 mt-2 me-2">Details</button>
+          <button class="btn btn-outline-light rounded-5 px-4 mt-2">Workshops</button>
+        </div>
+      </div>
+      <!-- <div class="col-lg-7 p-0">
+        <img class="h-100 w-100 rounded-5 shadow" style="object-fit: cover" src="https://workshopsinwildplaces.com/assets/img/cornwall-earth-pigments.jpg" alt="...">
+      </div> -->
+    </div>
+    <!-- <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: #F2E9E4">
       <div class="col-lg-5 d-flex flex-column justify-content-center align-items-start p-4 p-lg-5">
         <h2 class="display-3 text-uppercase lh-1" style="letter-spacing: -3px">About</h2>
         <p class="h5 py-3 pe-4">Workshops in Wild Places is an international art teaching initiative developed by Canadian artist and educator Janice Mason Steeves. Travel to remote locations throughout the world to connect with the beauty and power of the wild landscape.</p>
-        <button class="btn btn-dark rounded-5 px-4">more</button>
+        <button class="btn btn-dark rounded-5 px-4">More</button>
       </div>
       <div class="col-lg-7 p-0">
         <img class="h-100 w-100 rounded-5 shadow" style="object-fit: cover" src="https://workshopsinwildplaces.com/assets/img/cornwall-earth-pigments.jpg" alt="...">
       </div>
-    </div>
+    </div> -->
     
     <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: #C9ADA7">
       <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/jms-wiwp-scotland-banner.jpg') center; background-size: cover">
@@ -52,7 +65,7 @@
         <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Scotland</h2>
         <h3 class="fw-bold">Orkney Islands</h3>
         <p class="text-uppercase">May 15-26, 2023</p>
-        <button class="btn btn-dark rounded-5 px-4">more</button>
+        <button class="btn btn-dark rounded-5 px-4">More</button>
       </div>
     </div>
     
@@ -62,7 +75,7 @@
         <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Italy</h2>
         <h3 class="fw-bold">Vitorchiano</h3>
         <p class="text-uppercase">September 19 - 29, 2023</p>
-        <button class="btn btn-dark rounded-5 px-4">more</button>
+        <button class="btn btn-dark rounded-5 px-4">More</button>
       </div>
       <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/jms-wiwp-italy-main.jpeg') center; background-size: cover">
       </div>
@@ -76,7 +89,7 @@
         <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Spain</h2>
         <h3 class="fw-bold">Castrillo de los Polvazares</h3>
         <p class="text-uppercase">October 30 - November 9, 2023</p>
-        <button class="btn btn-light rounded-5 px-4">more</button>
+        <button class="btn btn-light rounded-5 px-4">More</button>
       </div>
     </div>
 
@@ -86,7 +99,7 @@
         <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Sahara</h2>
         <h3 class="fw-bold">Morocco</h3>
         <p class="text-uppercase">February 23 - March 4, 2024</p>
-        <button class="btn btn-light rounded-5 px-4">more</button>
+        <button class="btn btn-light rounded-5 px-4">More</button>
       </div>
       <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/sahara-camel-dunes-1.jpg') center; background-size: cover">
       </div>
