@@ -62,8 +62,8 @@
         </div>
         <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-start p-5">
           <h5>WiWP</h5>
-          <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Scotland</h2>
-          <h3 class="fw-bold">Orkney Islands</h3>
+          <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">Orkney Islands</h2>
+          <h3 class="fw-bold text-secondary">Scotland</h3>
           <p class="text-uppercase">May 15-26, 2023</p>
           <button class="btn btn-dark rounded-5 px-4">More</button>
         </div>
@@ -72,8 +72,8 @@
       <div class="row min-vh-75 m-3 p-4 rounded-5 bg-dark text-light">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-start p-5">
           <h5>WiWP</h5>
-          <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Italy</h2>
-          <h3 class="fw-bold">Vitorchiano</h3>
+          <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">Vitorchiano</h2>
+          <h3 class="fw-bold text-secondary">Italy</h3>
           <p class="text-uppercase">September 19 - 29, 2023</p>
           <button class="btn btn-light rounded-5 px-4">More</button>
         </div>
@@ -86,8 +86,8 @@
         </div>
         <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-start p-5">
           <h5>WiWP</h5>
-          <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Spain</h2>
-          <h3 class="fw-bold">Castrillo de los Polvazares</h3>
+          <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">Castrillo de los Polvazares</h2>
+          <h3 class="fw-bold text-secondary">Spain</h3>
           <p class="text-uppercase">October 30 - November 9, 2023</p>
           <button class="btn btn-dark rounded-5 px-4">More</button>
         </div>
@@ -96,8 +96,8 @@
       <div class="row min-vh-75 m-3 p-4 rounded-5 bg-dark text-light">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-light p-5">
           <h5>WiWP</h5>
-          <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Sahara</h2>
-          <h3 class="fw-bold">Morocco</h3>
+          <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">Sahara</h2>
+          <h3 class="fw-bold text-secondary">Morocco</h3>
           <p class="text-uppercase">February 23 - March 4, 2024</p>
           <button class="btn btn-light rounded-5 px-4">More</button>
         </div>
@@ -107,7 +107,7 @@
   
       <div class="row m-3 rounded-5 bg-light border shadow-lg">
         <div class="col-lg-12 text-center p-5">
-          <h2 class="display-3 text-uppercase lh-1" style="letter-spacing: -3px;">What People are Saying</h2>
+          <h2 class="display-3 fw-bold lh-1" style="letter-spacing: -3px;">What People are Saying</h2>
           <p class="fs-5 mb-0">Workshops in Wild Places participant testimonials</p>
         </div>
         <div class="col-lg-4 p-3">
