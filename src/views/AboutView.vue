@@ -1,3 +1,27 @@
+<script setup>
+import { onMounted, ref } from 'vue'
+import carouselData from '../data/carousel.json'
+import tripData from '../data/trips.json'
+import useAnimation from '../stores/useAnimation'
+import gsap from 'gsap'
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+const { animate } = useAnimation();
+
+// const base_url = "https://simplejsoncms.com/api/b3nwgf9o4re";
+// const tripData = ref([]);
+// async function getData() {
+//     let response = await fetch(base_url);
+//     tripData.value = await response.json();
+//     console.log(tripData.value)
+//   }
+
+onMounted(() => {
+  animate();
+  // getData();
+})
+</script>
+
 <template>
   <div class="container-fluid px-0">
     <div class="row min-vh-100">
@@ -12,106 +36,177 @@
     </div>
 
     <div class="row min-vh-100 position-relative m-3">
-      <!-- <img src="https://images.unsplash.com/photo-1603479354350-7391f7421afd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80" alt="" class="position-absolute start-0 top-0 w-100 h-100 p-0 rounded-5" style="z-index: 0; object-fit: cover"> -->
       <img src="https://images.unsplash.com/photo-1554757388-29a2a86ef02f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="position-absolute start-0 top-0 w-100 h-100 p-0 rounded-5" style="z-index: 0; object-fit: cover">
     </div>
-    <!-- <div class="row min-vh-100 position-relative">
-      style="background: url('https://images.unsplash.com/photo-1488456682038-659fb6e7ddf7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1924&q=80') center; background-size: cover; "
-      <img src="https://images.unsplash.com/photo-1599496507927-9056debd0f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="position-absolute start-0 top-0 w-100 h-100 p-0" style="z-index: 0; object-fit: cover">
-      <img src="https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" class="position-absolute start-0 top-0 w-100 h-100 p-0" style="z-index: 0; object-fit: cover">
-      <img src="https://images.unsplash.com/photo-1515379249414-55c66470cd61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1491&q=80" alt="" class="position-absolute start-0 top-0 w-100 h-100 p-0" style="z-index: 0; object-fit: cover">
-      <img src="https://images.unsplash.com/photo-1554757388-29a2a86ef02f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="position-absolute start-0 top-0 w-100 h-100 p-0" style="z-index: 0; object-fit: cover">
-      <div class="col-lg-12 position-relative d-flex flex-column justify-content-center align-items-center text-light">
-        <div class="d-flex flex-column justify-content-center align-items-center min-vh-75 w-75 m-3 rounded-5 p-5" >
-        <h1 class="display-1 fw-bold text-uppercase lh-1" style="letter-spacing: -3px;">Workshops in <br> Wild Places</h1>
-        <h4 class="col-md-8 py-2">Connecting artists with the land in remote, wild locations worldwide.</h4>
-        <div class="d-flex mt-3">
-          <button class="btn btn-light rounded-5 me-2 px-4">Upcoming</button>
-          <button class="btn btn-outline-light rounded-5 px-4">Learn More</button>
-        </div>
-      </div>
-      </div>
-    </div> -->
 
     <div class="row min-vh-75 m-3 p-4 rounded-5 bg-dark text-light">
       <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center p-4 p-lg-5">
-        <h2 class="h5">About WiWP</h2>
-        <p class="fs-2 lh-1 my-3">Workshops in Wild Places <span style="color: #a1a1a6">is an international art teaching initiative developed by Canadian artist and educator Janice Mason Steeves. Participants travel to remote locations throughout the world to connect with the beauty and power of the wild landscape through the creative process.</span></p>
-        <div class=" d-flex">
+        <h2 class="up h5">About WiWP</h2>
+        <p class="up fs-2 lh-1 my-3">Workshops in Wild Places <span style="color: #a1a1a6">is an international art teaching initiative developed by Canadian artist and educator Janice Mason Steeves. Participants travel to remote locations throughout the world to connect with the beauty and power of the wild landscape through the creative process.</span></p>
+        <div class="up d-flex">
           <button class="btn btn-outline-light rounded-5 px-4 mt-2 me-2">Details</button>
           <button class="btn btn-outline-light rounded-5 px-4 mt-2">Workshops</button>
         </div>
       </div>
-      <!-- <div class="col-lg-7 p-0">
-        <img class="h-100 w-100 rounded-5 shadow" style="object-fit: cover" src="https://workshopsinwildplaces.com/assets/img/cornwall-earth-pigments.jpg" alt="...">
-      </div> -->
     </div>
-    <!-- <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: #F2E9E4">
-      <div class="col-lg-5 d-flex flex-column justify-content-center align-items-start p-4 p-lg-5">
-        <h2 class="display-3 text-uppercase lh-1" style="letter-spacing: -3px">About</h2>
-        <p class="h5 py-3 pe-4">Workshops in Wild Places is an international art teaching initiative developed by Canadian artist and educator Janice Mason Steeves. Travel to remote locations throughout the world to connect with the beauty and power of the wild landscape.</p>
-        <button class="btn btn-dark rounded-5 px-4">More</button>
+
+    <!-- <div class="row m-3 bg-dark text-light rounded-5 shadow" 
+    v-for="(trip, index) in tripData" :key="index">
+    <div class="w-100 d-flex flex-wrap flex-md-nowwrap" v-if="index % 2 === 0">
+      <div class="col-lg-6 p-5">
+        <h1 class="display-2">{{ trip.name }}</h1>
+        <p>{{ trip.description }}</p>
+        <router-link
+        :to="'/' + trip.slug">
+            {{ trip.name }}
+          </router-link>
+        <router-link
+          :to="{ name: 'Detail', params: {slug: trip.slug}}">
+            {{ trip.name }}
+          </router-link>
       </div>
-      <div class="col-lg-7 p-0">
-        <img class="h-100 w-100 rounded-5 shadow" style="object-fit: cover" src="https://workshopsinwildplaces.com/assets/img/cornwall-earth-pigments.jpg" alt="...">
+      <div class="col-lg-6 p-5 min-vh-50">
+        <img src="https://placehold.co/1000x400" class="rounded-5 h-100 w-100" alt="">
+      </div>
+    </div>
+    <div class="w-100 d-flex flex-wrap flex-md-nowwrap" v-else>
+        <div class="col-lg-6 p-5 min-vh-50">
+        <img src="https://placehold.co/1000x400" class="rounded-5 h-100 w-100" alt="">
+      </div>
+      <div class="col-lg-6 p-5">
+        <h1 class="display-2">{{ trip.name }}</h1>
+        <p>{{ trip.description }}</p>
+        <router-link
+          :to="{ name: 'Detail', params: {slug: trip.slug}}">
+            {{ trip.name }}
+          </router-link>
+      </div>
+     
       </div>
     </div> -->
     
-    <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: #C9ADA7">
-      <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/jms-wiwp-scotland-banner.jpg') center; background-size: cover">
+    <div class="row min-vh-75 m-3 p-4 rounded-5 border shadow-lg"
+    :class="index % 2 === 0 ? 'bg-light' : 'bg-dark text-light'"
+    v-for="(trip, index) in tripData" :key="index">
+      <div class="w-100 d-flex flex-wrap flex-md-nowwrap" v-if="index % 2 === 0">
+        <div class="col-lg-6 min-vh-50 rounded-5 shadow" :style="{ 'background' : 'url('+ trip.image1 + ')', 'background-size' : 'cover'}">
+        </div>
+        <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-start p-5">
+          <h5>WiWP</h5>
+          <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">{{ trip.location }}</h2>
+          <h3 class="fw-bold text-secondary">{{ trip.name }}</h3>
+          <p class="text-uppercase">{{ trip.date }}</p>
+          <router-link :to="'/' + trip.slug">
+            <button class="btn btn-dark rounded-5 px-5">More</button>
+          </router-link>
+        </div>
       </div>
-      <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-start p-5">
-        <h5>WiWP</h5>
-        <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Scotland</h2>
-        <h3 class="fw-bold">Orkney Islands</h3>
-        <p class="text-uppercase">May 15-26, 2023</p>
-        <button class="btn btn-dark rounded-5 px-4">More</button>
-      </div>
+
+      <div v-else class="w-100 d-flex flex-wrap flex-md-nowwrap">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-start p-5">
+          <h5>WiWP</h5>
+          <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">{{ trip.location }}</h2>
+          <h3 class="fw-bold text-secondary">{{ trip.name }}</h3>
+          <p class="text-uppercase">{{ trip.date }}</p>
+          <router-link :to="'/' + trip.slug">
+            <button class="btn btn-light rounded-5 px-5">More</button>
+          </router-link>
+        </div>
+        <div class="col-lg-6 min-vh-50 rounded-5 shadow" :style="{ 'background' : 'url('+ trip.image1 +')', 'background-size' : 'cover'}">
+        </div>
     </div>
-    
-    <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: #9A8C98">
+
+    </div>
+<!--     
+    <div class="row min-vh-75 m-3 p-4 rounded-5 bg-dark text-light">
       <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-start p-5">
         <h5>WiWP</h5>
-        <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Italy</h2>
-        <h3 class="fw-bold">Vitorchiano</h3>
+        <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">Vitorchiano</h2>
+        <h3 class="fw-bold text-secondary">Italy</h3>
         <p class="text-uppercase">September 19 - 29, 2023</p>
-        <button class="btn btn-dark rounded-5 px-4">More</button>
+        <button class="btn btn-light rounded-5 px-4">More</button>
       </div>
       <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/jms-wiwp-italy-main.jpeg') center; background-size: cover">
       </div>
     </div>
 
-    <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: #4A4E69">
+    <div class="row min-vh-75 m-3 p-4 rounded-5 bg-light border shadow-lg">
       <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/spain-main.jpg') center; background-size: cover">
       </div>
-      <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-start text-light p-5">
+      <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-start p-5">
         <h5>WiWP</h5>
-        <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Spain</h2>
-        <h3 class="fw-bold">Castrillo de los Polvazares</h3>
+        <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">Castrillo de los Polvazares</h2>
+        <h3 class="fw-bold text-secondary">Spain</h3>
         <p class="text-uppercase">October 30 - November 9, 2023</p>
-        <button class="btn btn-light rounded-5 px-4">More</button>
+        <button class="btn btn-dark rounded-5 px-4">More</button>
       </div>
     </div>
 
-    <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: #22223B">
+    <div class="row min-vh-75 m-3 p-4 rounded-5 bg-dark text-light">
       <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-light p-5">
         <h5>WiWP</h5>
-        <h2 class="display-2 text-uppercase lh-1" style="letter-spacing: -3px;">Sahara</h2>
-        <h3 class="fw-bold">Morocco</h3>
+        <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">Sahara</h2>
+        <h3 class="fw-bold text-secondary">Morocco</h3>
         <p class="text-uppercase">February 23 - March 4, 2024</p>
         <button class="btn btn-light rounded-5 px-4">More</button>
       </div>
       <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/sahara-camel-dunes-1.jpg') center; background-size: cover">
       </div>
+    </div> -->
+
+    <div class="row m-3 rounded-5 bg-light border shadow-lg">
+      <div class="col-lg-12 text-center p-5">
+        <h2 class="display-3 fw-bold lh-1" style="letter-spacing: -3px;">What People are Saying</h2>
+        <p class="fs-5 mb-0 mt-3">Workshops in Wild Places participant testimonials</p>
+      </div>
+      <div class="col-lg-12 p-0 min-vh-50">
+        <div class="mx-3 mb-3">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item min-vh-50 rounded-5" 
+              :class="index === 0 ? 'active' : ''" 
+              v-for="(item, index) in carouselData.carousel" :key="index"
+              :style="{ 'background-image': 'url(' + item.image + ')', backgroundSize: 'cover' }">
+              <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start bg-dark text-light p-5 m-3 rounded-5 shadow">
+                <h4 class="h2 fw-bold">{{ item.name }} <span class="fw-light fs-5">{{ item.age }}</span></h4>
+                <p class="fw-bold">{{ item.trip }}</p>
+                <p class="fst-italic">"{{ item.text }}"</p>
+                <!-- <p>{{ item.image }}</p> -->
+                <span class="text-warning fs-5">⭑ ⭑ ⭑ ⭑ ⭑</span>
+                <div class="hstack gap-1">
+                <button class="btn btn-link p-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="fs-3 text-light" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                    </svg>
+                  </span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="btn btn-link" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="fs-3 text-light" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                  </span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
     </div>
 
-    <div class="row m-3 rounded-5" style="background: #F2E9E4">
+    <!-- <div class="row m-3 rounded-5 bg-light border shadow-lg">
       <div class="col-lg-12 text-center p-5">
-        <h2 class="display-3 text-uppercase lh-1" style="letter-spacing: -3px;">What People are Saying</h2>
-        <p class="fs-5 mb-0">Workshops in Wild Places participant testimonials</p>
+        <h2 class="display-3 fw-bold lh-1" style="letter-spacing: -3px;">What People are Saying</h2>
+        <p class="fs-5 mb-0 mt-3">Workshops in Wild Places participant testimonials</p>
       </div>
       <div class="col-lg-4 p-3">
-        <div class="p-3 rounded-5 text-light" style="min-height: 550px; background: #22223B">
+        <div class="p-3 rounded-5 text-light bg-dark" style="min-height: 550px;">
           <img src="https://source.unsplash.com/1200x300?painter, female" alt="" class="w-100 rounded-5 shadow" style="min-height: 200px; object-fit: cover">
           <div class="p-3 py-4">
             <h4 class="fw-bold">Theresa Morris, <span class="fw-light fs-5">61, Toronto</span></h4>
@@ -122,7 +217,7 @@
         </div>
       </div>
       <div class="col-lg-4 p-3">
-        <div class="p-3 rounded-5 text-light" style="min-height: 550px; background: #22223B">
+        <div class="p-3 rounded-5 text-light bg-dark" style="min-height: 550px;">
           <img src="https://source.unsplash.com/1200x300?abstract" alt="" class="w-100 rounded-5 shadow" style="min-height: 200px; object-fit: cover">
           <div class="p-3 py-4">
             <h4>Julie Brogan, <span class="fw-light fs-5">55, Guelph</span></h4>
@@ -134,7 +229,7 @@
         </div>
       </div>
       <div class="col-lg-4 p-3">
-        <div class="p-3 rounded-5 text-light" style="min-height: 550px; background: #22223B">
+        <div class="p-3 rounded-5 text-light bg-dark" style="min-height: 550px;">
           <img src="https://source.unsplash.com/1200x300? art,woman" alt="" class="w-100 rounded-5 shadow" style="min-height: 200px; object-fit: cover">
           <div class="p-3 py-4">
             <h4 class="fw-bold">Julia Child, <span class="fw-light fs-5">65, Toronto</span></h4>
@@ -144,7 +239,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- newsletter -->
 
@@ -152,11 +247,10 @@
       <div class="col-lg-5 d-flex flex-column justify-content-center align-items-start p-5 rounded-5 bg-dark text-light">
         <p class="mb-0 lh-1">Join my</p>
         <h3 class="display-4 fw-bold">Newsletter</h3>
-        <!-- <p>Sign up and get WiWP news, announcements, special offers and workshop info straight to your inbox.</p> -->
       </div>
       <div class="col-lg-7 d-flex flex-column justify-content-center align-items-start p-5">
         <div id="mc_embed_signup" class="w-100">
-					<form action="https://janicemasonsteeves.us12.list-manage.com/subscribe/post?u=a9ab1596540478d19124106d8&amp;id=66a407ea79&amp;SIGNUP=WiWP" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate-2 bs" target="_blank" novalidate>
+                    <form action="https://janicemasonsteeves.us12.list-manage.com/subscribe/post?u=a9ab1596540478d19124106d8&amp;id=66a407ea79&amp;SIGNUP=WiWP" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate-2 bs" target="_blank" novalidate>
 
             <div class="input-group"  id="mc_embed_signup_scroll">
               <button class="btn btn-dark px-4"
@@ -169,13 +263,13 @@
                style="border-radius: 0 22px 22px 0;" aria-label="Example text with button addon" aria-describedby="button-addon1"
               type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="email address" required>
             </div>
-					</form>
-				</div>
+                    </form>
+                </div>
       </div>
     </div>
 
     <footer>
-      <div class="row min-vh-50 m-3 p-4 rounded-5" style="background: #22223B">
+      <div class="row min-vh-50 m-3 p-4 rounded-5 bg-dark">
       <div class="col-lg-3 d-flex flex-column justify-content-center align-items-start text-light p-5">
         <h3 class="fw-bold">WiWP</h3>
         <ul class="list-unstyled fs-5">
@@ -203,7 +297,7 @@
           <li>Email</li>
         </ul>
       </div>
-      <div class="col-lg-3 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/sahara-camel-dunes-1.jpg') center; background-size: cover">
+      <div class="col-lg-3 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/sahara-camel-dunes-1.jpg') center; background-size: cover">
       </div>
     </div>
     </footer>
@@ -222,26 +316,13 @@
   min-height: 75vh;
 }
 
-/* h1 {
-  text-align: center;
-        align-items: center;
-        background-image: url("https://images.unsplash.com/photo-1488456682038-659fb6e7ddf7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1924&q=80");
-        background-size: 650px 450px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-} */
+footer ul li {
+  color: #a1a1a6;
+}
 
 .text {
   color: white;
   background: rgba(0, 0, 0, 0.7);
   mix-blend-mode: multiply;
-
-  /* color: black;
-  mix-blend-mode: screen;
-  background-color: rgb(244, 220, 211); */
 }
 </style>

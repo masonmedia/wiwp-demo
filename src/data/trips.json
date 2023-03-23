@@ -1,0 +1,71 @@
+[
+        {
+        "name": "Scotland",
+        "location": "Orkney Islands",
+        "slug": "scotland",
+        "date": "May 15-26, 2023",
+        "image1": "https://workshopsinwildplaces.com/assets/img/jms-wiwp-scotland-banner.jpg",
+        "image2": "https://workshopsinwildplaces.com/assets/img/jms-wiwp-scotland-banner.jpg",
+        "image3": "https://workshopsinwildplaces.com/assets/img/jms-wiwp-scotland-banner.jpg",
+        "id": 1,
+        "title": "Painting on the edge of the world",
+        "description": "The Orkney Islands are among the world’s most inspirational landscapes. They have an 8500 year-old history of human occupation, older than the pyramids, older than Stonehenge. We’ll paint in this ancient landscape helped by the ancestors whose land we’ll walk.",
+        "details": "We’ll stay in Kirkwall, the capital of Orkney for 4 nights to experience the city and to tour some of the major archeological sites like Skara Brae.",
+        "accommodation": "Our base in Kirkwall is the beautiful Storehouse Restaurant with Rooms. Then we’ll head out to Linkshouse, our artist residency in the village of Birsay, right on the North Sea where we’ll spend the next 7 days with only each other, our paintings, the wind and the sea for company. Lots of time for walking.",
+        "itinerary": ""
+        },
+        {
+        "name": "Italy",
+        "location": "Vitorchiano",
+        "slug": "italy",
+        "date": "September 19 - 29, 2023",
+        "image1": "https://workshopsinwildplaces.com/assets/img/jms-wiwp-italy-main.jpeg",
+        "image2": "https://workshopsinwildplaces.com/assets/img/jms-wiwp-italy-top.png",
+        "image3": "https://workshopsinwildplaces.com/assets/img/jms-wiwp-italy-details.jpeg",
+        "id": 2,
+        "title": "Painting the soul of place in Italy",
+        "description": "We’ll spend 10 days in Vitorchiano, a small Etruscan village that’s carved in grey flecked tufa, perched on the edge of a dizzying gorge. This area of Italy called the Tuscia remains untouched by tourism.",
+        "details": "Our small group of 5 participants will be inspired by walking tours and a couple of tours to nearby archeological sites.",
+        "accommodation": "We’ll settle into our private rooms in our apartment hotel, nearby the studio of author Linda Lappin who will guide us in a one-day workshop on the soul of place.",
+        "itinerary": ""
+        },
+      {
+        "name": "Spain",
+        "location": "Castrillo de los Polvazares",
+        "slug": "spain",
+        "date": "October 30 - November 9, 2023",
+        "image1": "https://workshopsinwildplaces.com/assets/img/spain-main.jpg",
+        "image2": "https://workshopsinwildplaces.com/assets/img/spain-main.jpg",
+        "image3": "https://workshopsinwildplaces.com/assets/img/spain-main.jpg",
+        "id": 3,
+        "title": "Earth pigments on the Camino",
+        "description": "Connect to the Earth creatively through a deep experience of place. Discover the Camino and its treasures in an immersive way. Richly coloured soils will be collected and ground to make earthen pigments that we will use in our artwork.",
+        "details": "As well as collecting earth pigment, our group will visit San Miguel de Escalada and La Olmeda for examples of sacred geometry.",
+        "accommodation": "Some of us will stay at Flores del Camino and some a few steps away at Casa Coscolo, both in the small stone village of Castrillo de los Polvazares. We will stay in private rooms with ensuite in each inn.",
+        "itinerary": "",
+        "experiences": [
+          {
+            "name": "Iguaçu Falls",
+            "slug": "iguacu-falls",
+            "image": "iguacu-falls.jpg",
+            "description":
+              "Suspendisse lobortis pharetra tempor. Cras eleifend ante sed arcu interdum, in bibendum enim ultricies. Integer rutrum quis risus at tempor. Maecenas facilisis, nisi vel pellentesque maximus, lectus felis malesuada purus, a pulvinar elit est quis turpis. Duis convallis purus quis finibus consequat. Pellentesque faucibus tin unt augue non consequat. Donec fringilla at est sit amet blandit. Nunc at porttitor ligula. Fusce sed odio turpis. Suspendisse lobortis pharetra tempor. Cras eleifend ante sed arcu interdum, in bibendum enim ultricies. Integer rutrum quis risus at tempor. Maecenas facilisis, nisi vel pellentesque maximus, lectus felis malesuada purus, a pulvinar elit est quis turpis. Duis convallis purus quis finibus consequat. Pellentesque faucibus tinc unt augue non consequat. Donec fringilla at est sit amet blandit. Nunc at porttitor ligula. Fusce sed odio turpis."
+          }
+        ]
+    },
+          {
+            "name": "Morocco",
+            "location": "Sahara",
+            "slug": "morocco",
+            "date": "February 23 - March 4, 2024",
+            "image1": "https://workshopsinwildplaces.com/assets/img/sahara-camel-dunes-1.jpg",
+            "image2": "https://workshopsinwildplaces.com/assets/img/sahara-camel-dunes-1.jpg",
+            "image3": "https://workshopsinwildplaces.com/assets/img/sahara-camel-dunes-1.jpg",
+            "id": 4,
+            "title": "Painting in the Sahara: Beyond the end of the road",
+            "description": "There's a remote desert camp nestled in the Erg Chicaga dunes of the western Sahara, one and a half hours past the road that ends in the small village of M'Hamid.",
+            "details": "Our focus will be on connecting with the earth, sitting in such an immense enveloping silence that we might even hear our own heartbeats, perhaps even the sound of the dunes singing, as we slow down to connect with our inner peace. The silence holds a presence here.",
+            "accommodation": "This is true glamping: We’ll each stay in our own tent with ensuite.",
+            "itinerary": ""
+          }
+    ]

@@ -1,0 +1,25 @@
+{
+    "carousel": [
+        {
+            "name": "Theresa Morris",
+            "age": "61, Toronto",
+            "trip": "Scotland | The Burren",
+            "text": "The trip was a perfect blend of painting and exploring the Burren. I even did some of my best work! Our small group bonded in a lovely way- maybe even friends for life! Thank you Janice.",
+            "image": "https://source.unsplash.com/1200x300?paint"
+        },
+        {
+            "name": "Julie Brogan",
+            "age": "55, Guelph",
+            "trip": "Spain | The Camino",
+            "text": "Friendships were easily forged and every person in the group had so much to contribute. I always think that you make this happen with your warm and creative personality and the way you treat nature in a sacred manner. You change our perspective of looking at things and that my friend is a true gift.",
+            "image": "https://source.unsplash.com/1200x300?abstract"
+        },
+        {
+            "name": "Julia Child",
+            "age": "67, Orillia",
+            "trip": "Scotland | The Burren",
+            "text": "Friendships were easily forged and every person in the group had so much to contribute. I always think that you make this happen with your warm and creative personality and the way you treat nature in a sacred manner. You change our perspective of looking at things and that my friend is a true gift.",
+            "image": "https://source.unsplash.com/1200x300?color"
+        }
+    ]
+}

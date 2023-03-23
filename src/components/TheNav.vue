@@ -8,8 +8,6 @@ const router = useRouter();
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <router-link class="navbar-brand font-antonio fs-4" to="/">WiWP</router-link>
-           
-
             <div class="hstack gap-2 ms-auto">
                 <button class="btn btn-sm btn-primary rounded-5 px-4 ms-auto">Sign up</button>
                 <button class="btn btn-sm btn-outline-light rounded-5 px-4 me-2">Contact</button>

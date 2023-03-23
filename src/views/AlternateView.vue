@@ -108,7 +108,7 @@
       <div class="row m-3 rounded-5 bg-light border shadow-lg">
         <div class="col-lg-12 text-center p-5">
           <h2 class="display-3 fw-bold lh-1" style="letter-spacing: -3px;">What People are Saying</h2>
-          <p class="fs-5 mb-0">Workshops in Wild Places participant testimonials</p>
+          <p class="fs-5 mb-0 mt-3">Workshops in Wild Places participant testimonials</p>
         </div>
         <div class="col-lg-4 p-3">
           <div class="p-3 rounded-5 text-light bg-dark" style="min-height: 550px;">
