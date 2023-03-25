@@ -49,41 +49,6 @@ onMounted(() => {
         </div>
       </div>
     </div>
-
-    <!-- <div class="row m-3 bg-dark text-light rounded-5 shadow" 
-    v-for="(trip, index) in tripData" :key="index">
-    <div class="w-100 d-flex flex-wrap flex-md-nowwrap" v-if="index % 2 === 0">
-      <div class="col-lg-6 p-5">
-        <h1 class="display-2">{{ trip.name }}</h1>
-        <p>{{ trip.description }}</p>
-        <router-link
-        :to="'/' + trip.slug">
-            {{ trip.name }}
-          </router-link>
-        <router-link
-          :to="{ name: 'Detail', params: {slug: trip.slug}}">
-            {{ trip.name }}
-          </router-link>
-      </div>
-      <div class="col-lg-6 p-5 min-vh-50">
-        <img src="https://placehold.co/1000x400" class="rounded-5 h-100 w-100" alt="">
-      </div>
-    </div>
-    <div class="w-100 d-flex flex-wrap flex-md-nowwrap" v-else>
-        <div class="col-lg-6 p-5 min-vh-50">
-        <img src="https://placehold.co/1000x400" class="rounded-5 h-100 w-100" alt="">
-      </div>
-      <div class="col-lg-6 p-5">
-        <h1 class="display-2">{{ trip.name }}</h1>
-        <p>{{ trip.description }}</p>
-        <router-link
-          :to="{ name: 'Detail', params: {slug: trip.slug}}">
-            {{ trip.name }}
-          </router-link>
-      </div>
-     
-      </div>
-    </div> -->
     
     <div class="row min-vh-75 m-3 p-4 rounded-5 border shadow-lg"
     :class="index % 2 === 0 ? 'bg-light' : 'bg-dark text-light'"
@@ -115,44 +80,7 @@ onMounted(() => {
         <div class="col-lg-6 min-vh-50 rounded-5 shadow" :style="{ 'background' : 'url('+ trip.image1 +')', 'background-size' : 'cover'}">
         </div>
     </div>
-
     </div>
-<!--     
-    <div class="row min-vh-75 m-3 p-4 rounded-5 bg-dark text-light">
-      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-start p-5">
-        <h5>WiWP</h5>
-        <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">Vitorchiano</h2>
-        <h3 class="fw-bold text-secondary">Italy</h3>
-        <p class="text-uppercase">September 19 - 29, 2023</p>
-        <button class="btn btn-light rounded-5 px-4">More</button>
-      </div>
-      <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/jms-wiwp-italy-main.jpeg') center; background-size: cover">
-      </div>
-    </div>
-
-    <div class="row min-vh-75 m-3 p-4 rounded-5 bg-light border shadow-lg">
-      <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/spain-main.jpg') center; background-size: cover">
-      </div>
-      <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-start p-5">
-        <h5>WiWP</h5>
-        <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">Castrillo de los Polvazares</h2>
-        <h3 class="fw-bold text-secondary">Spain</h3>
-        <p class="text-uppercase">October 30 - November 9, 2023</p>
-        <button class="btn btn-dark rounded-5 px-4">More</button>
-      </div>
-    </div>
-
-    <div class="row min-vh-75 m-3 p-4 rounded-5 bg-dark text-light">
-      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-light p-5">
-        <h5>WiWP</h5>
-        <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">Sahara</h2>
-        <h3 class="fw-bold text-secondary">Morocco</h3>
-        <p class="text-uppercase">February 23 - March 4, 2024</p>
-        <button class="btn btn-light rounded-5 px-4">More</button>
-      </div>
-      <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/sahara-camel-dunes-1.jpg') center; background-size: cover">
-      </div>
-    </div> -->
 
     <div class="row m-3 rounded-5 bg-light border shadow-lg">
       <div class="col-lg-12 text-center p-5">
@@ -200,47 +128,6 @@ onMounted(() => {
       </div>
     </div>
 
-    <!-- <div class="row m-3 rounded-5 bg-light border shadow-lg">
-      <div class="col-lg-12 text-center p-5">
-        <h2 class="display-3 fw-bold lh-1" style="letter-spacing: -3px;">What People are Saying</h2>
-        <p class="fs-5 mb-0 mt-3">Workshops in Wild Places participant testimonials</p>
-      </div>
-      <div class="col-lg-4 p-3">
-        <div class="p-3 rounded-5 text-light bg-dark" style="min-height: 550px;">
-          <img src="https://source.unsplash.com/1200x300?painter, female" alt="" class="w-100 rounded-5 shadow" style="min-height: 200px; object-fit: cover">
-          <div class="p-3 py-4">
-            <h4 class="fw-bold">Theresa Morris, <span class="fw-light fs-5">61, Toronto</span></h4>
-            <p class="fw-bold">Scotland | The Burren</p>
-            <p class="fst-italic">〃The trip was a perfect blend of painting and exploring the Burren. I even did some of my best work! Our small group bonded in a lovely way- maybe even friends for life! Thank you Janice.〃</p>
-            <span class="text-warning fs-5">⭑ ⭑ ⭑ ⭑ ⭑</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 p-3">
-        <div class="p-3 rounded-5 text-light bg-dark" style="min-height: 550px;">
-          <img src="https://source.unsplash.com/1200x300?abstract" alt="" class="w-100 rounded-5 shadow" style="min-height: 200px; object-fit: cover">
-          <div class="p-3 py-4">
-            <h4>Julie Brogan, <span class="fw-light fs-5">55, Guelph</span></h4>
-            <p class="fw-bold">Spain | The Camino</p>
-            <p class="fst-italic">〃Friendships were easily forged and every person in the group had so much to contribute. I always think that you make this happen with your warm and creative personality and the way you treat nature in a sacred manner. You change our perspective of looking at things and that my friend is a true gift.〃</p>
-            <span class="text-warning fs-5">⭑ ⭑ ⭑ ⭑ ✩</span>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 p-3">
-        <div class="p-3 rounded-5 text-light bg-dark" style="min-height: 550px;">
-          <img src="https://source.unsplash.com/1200x300? art,woman" alt="" class="w-100 rounded-5 shadow" style="min-height: 200px; object-fit: cover">
-          <div class="p-3 py-4">
-            <h4 class="fw-bold">Julia Child, <span class="fw-light fs-5">65, Toronto</span></h4>
-            <p class="fw-bold">Scotland | The Burren</p>
-            <p class="fst-italic">〃The trip was a perfect blend of painting and exploring the Burren. I even did some of my best work! Our small group bonded in a lovely way- maybe even friends for life! Thank you Janice.〃</p>
-            <span class="text-warning fs-5">⭑ ⭑ ⭑ ⭑ ⭑</span>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <!-- newsletter -->
 
     <div class="row m-3 rounded-5 bg-light border border-secondary">
@@ -250,8 +137,7 @@ onMounted(() => {
       </div>
       <div class="col-lg-7 d-flex flex-column justify-content-center align-items-start p-5">
         <div id="mc_embed_signup" class="w-100">
-                    <form action="https://janicemasonsteeves.us12.list-manage.com/subscribe/post?u=a9ab1596540478d19124106d8&amp;id=66a407ea79&amp;SIGNUP=WiWP" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate-2 bs" target="_blank" novalidate>
-
+            <form action="https://janicemasonsteeves.us12.list-manage.com/subscribe/post?u=a9ab1596540478d19124106d8&amp;id=66a407ea79&amp;SIGNUP=WiWP" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate-2 bs" target="_blank" novalidate>
             <div class="input-group"  id="mc_embed_signup_scroll">
               <button class="btn btn-dark px-4"
               style="border-radius: 22px 0 0 22px;" 
@@ -301,28 +187,7 @@ onMounted(() => {
       </div>
     </div>
     </footer>
-
-
   
   </div>
 </template>
 
-<style>
-.min-vh-50 {
-  min-height: 50vh;
-}
-
-.min-vh-75 {
-  min-height: 75vh;
-}
-
-footer ul li {
-  color: #a1a1a6;
-}
-
-.text {
-  color: white;
-  background: rgba(0, 0, 0, 0.7);
-  mix-blend-mode: multiply;
-}
-</style>

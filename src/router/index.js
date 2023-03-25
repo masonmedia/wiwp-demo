@@ -29,17 +29,17 @@ const router = createRouter({
       path: '/:slug',
       name: 'Detail',
       component: () => import('../views/Detail.vue')
-    },
-    {
-      path: "/breweries",
-      name: "Breweries",
-      component: () => import('../views/Breweries.vue')
-  },
-    {
-      path: "/brewery/:id",
-      name: "BreweryDetail",
-      component: () => import('../views/BreweryDetail.vue')
-  }
+    }
+  //   {
+  //     path: "/breweries",
+  //     name: "Breweries",
+  //     component: () => import('../views/Breweries.vue')
+  // },
+  //   {
+  //     path: "/brewery/:id",
+  //     name: "BreweryDetail",
+  //     component: () => import('../views/BreweryDetail.vue')
+  // }
   ],
   scrollBehavior() {
     return new Promise((resolve) => {

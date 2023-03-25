@@ -1,5 +1,6 @@
 <script setup>
 import { useRoute, useRouter } from "vue-router";
+import tripData from '../data/trips.json'
 const router = useRouter();
 
 </script>
@@ -11,11 +12,10 @@ const router = useRouter();
             <div class="hstack gap-2 ms-auto">
                 <button class="btn btn-sm btn-primary rounded-5 px-4 ms-auto">Sign up</button>
                 <button class="btn btn-sm btn-outline-light rounded-5 px-4 me-2">Contact</button>
-                <!-- <button class="btn btn-sm btn-outline-light rounded-5 px-4 ms-auto">Blog</button> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-</div>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
 
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -25,30 +25,38 @@ const router = useRouter();
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">WiWP</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item" data-bs-dismiss="offcanvas">
-                    <router-link class="nav-link" v-for="(route, index) in router.options.routes" :key="index"
+            <div class="offcanvas-body d-flex flex-column justify-content-end align-items-start">
+                <ul class="navbar-nav justify-content-end flex-grow-1 px-3">
+                    <!-- <router-link class="nav-link" v-for="(route, index) in router.options.routes" :key="index"
                     :to="route.path">
                         {{ route.name }}
-                    </router-link>
-                </li>
-                <li class="nav-item dropdown">
-                    <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                    </a> -->
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
+                    </router-link> -->
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                        <router-link class="nav-link" to="/">Home</router-link>
                     </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                        <router-link class="nav-link" to="/about">About</router-link>
+                    </li>
+                    <li class="nav-item" data-bs-dismiss="offcanvas" 
+                    v-for="(trip, index) in tripData" :key="index">
+                        <span class="nav-link"
+                        @click="router.push({ name: 'Detail', params: { slug: trip.slug } })">
+                            {{ trip.name }}
+                </span>
+                    </li>
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                        <router-link class="nav-link" to="/">Archive</router-link>
+                    </li>
                 </ul>
             </div>
             </div>
         </div>
         </nav>
 </template>
+
+<style>
+.nav-item .nav-link {
+    font-size: 5vmin;
+    line-height: 5vmin;
+}
+</style>

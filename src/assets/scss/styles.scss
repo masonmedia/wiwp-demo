@@ -10,7 +10,17 @@ body {
 
 .min-vh-50 {
     min-height: 50vh;
-}
-.min-vh-75 {
+  }
+  
+  .min-vh-75 {
     min-height: 75vh;
+  }
+  
+  footer ul li {
+    color: #a1a1a6;
+  }
+
+.btn {
+    border-width: 2px !important;
+    font-weight: 500;
 }

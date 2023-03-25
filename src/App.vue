@@ -12,7 +12,8 @@ const router = useRouter();
     <TheNav></TheNav>
   </header>
 
-  <router-view v-slot="{ Component }">
+  <router-view
+  v-slot="{ Component }">
     <transition 
     name="slide-fade"
     mode="out-in">
@@ -21,7 +22,7 @@ const router = useRouter();
     @before-enter="beforeEnter"
     @enter="enter"
     @leave="leave"> -->
-      <component :is="Component" />
+      <component :is="Component" :key="$route.fullPath" />
     </transition>
   </router-view>
 </template>

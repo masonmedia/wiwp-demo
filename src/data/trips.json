@@ -1,5 +1,6 @@
 [
         {
+        "id": 1,
         "name": "Scotland",
         "location": "Orkney Islands",
         "slug": "scotland",
@@ -7,7 +8,8 @@
         "image1": "https://workshopsinwildplaces.com/assets/img/jms-wiwp-scotland-banner.jpg",
         "image2": "https://workshopsinwildplaces.com/assets/img/jms-wiwp-scotland-banner.jpg",
         "image3": "https://workshopsinwildplaces.com/assets/img/jms-wiwp-scotland-banner.jpg",
-        "id": 1,
+        "query": "Orkney",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2102077.414085345!2d-5.680316518790238!3d59.03514847174467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x489b9f93ef41121f%3A0x30c681a0642b050!2sOrkney%2C%20UK!5e0!3m2!1sen!2sca!4v1679668995248!5m2!1sen!2sca",
         "title": "Painting on the edge of the world",
         "description": "The Orkney Islands are among the world’s most inspirational landscapes. They have an 8500 year-old history of human occupation, older than the pyramids, older than Stonehenge. We’ll paint in this ancient landscape helped by the ancestors whose land we’ll walk.",
         "details": "We’ll stay in Kirkwall, the capital of Orkney for 4 nights to experience the city and to tour some of the major archeological sites like Skara Brae.",
@@ -23,6 +25,8 @@
         "image2": "https://workshopsinwildplaces.com/assets/img/jms-wiwp-italy-top.png",
         "image3": "https://workshopsinwildplaces.com/assets/img/jms-wiwp-italy-details.jpeg",
         "id": 2,
+        "query": "Vitorchiano",
+        "map" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23546.079580158304!2d12.145619822583146!3d42.46475976051135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f295da68471b1%3A0xbd790723cad358c3!2s01030%20Vitorchiano%2C%20VT%2C%20Italy!5e0!3m2!1sen!2sca!4v1679669072511!5m2!1sen!2sca",
         "title": "Painting the soul of place in Italy",
         "description": "We’ll spend 10 days in Vitorchiano, a small Etruscan village that’s carved in grey flecked tufa, perched on the edge of a dizzying gorge. This area of Italy called the Tuscia remains untouched by tourism.",
         "details": "Our small group of 5 participants will be inspired by walking tours and a couple of tours to nearby archeological sites.",
@@ -30,6 +34,7 @@
         "itinerary": ""
         },
       {
+        "id": 3,
         "name": "Spain",
         "location": "Castrillo de los Polvazares",
         "slug": "spain",
@@ -37,7 +42,8 @@
         "image1": "https://workshopsinwildplaces.com/assets/img/spain-main.jpg",
         "image2": "https://workshopsinwildplaces.com/assets/img/spain-main.jpg",
         "image3": "https://workshopsinwildplaces.com/assets/img/spain-main.jpg",
-        "id": 3,
+        "query": "Castrillo_de_los_Polvazares",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.251820353415!2d-6.131758284813283!3d42.46493262918009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd375e9fc575fa65%3A0x7c1d2c177baa09ac!2s24718%20Castrillo%20de%20los%20Polvazares%2C%20Le%C3%B3n%2C%20Spain!5e0!3m2!1sen!2sca!4v1679591215304!5m2!1sen!2sca",
         "title": "Earth pigments on the Camino",
         "description": "Connect to the Earth creatively through a deep experience of place. Discover the Camino and its treasures in an immersive way. Richly coloured soils will be collected and ground to make earthen pigments that we will use in our artwork.",
         "details": "As well as collecting earth pigment, our group will visit San Miguel de Escalada and La Olmeda for examples of sacred geometry.",
@@ -62,6 +68,8 @@
             "image2": "https://workshopsinwildplaces.com/assets/img/sahara-camel-dunes-1.jpg",
             "image3": "https://workshopsinwildplaces.com/assets/img/sahara-camel-dunes-1.jpg",
             "id": 4,
+            "query": "Morocco",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3544621.3931347555!2d-8.55381366555549!3d29.819706110015677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdbeb1fccf9dcafb%3A0xa7b730b303c9f47e!2sErg%20Chigaga!5e0!3m2!1sen!2sca!4v1679766432829!5m2!1sen!2sca",
             "title": "Painting in the Sahara: Beyond the end of the road",
             "description": "There's a remote desert camp nestled in the Erg Chicaga dunes of the western Sahara, one and a half hours past the road that ends in the small village of M'Hamid.",
             "details": "Our focus will be on connecting with the earth, sitting in such an immense enveloping silence that we might even hear our own heartbeats, perhaps even the sound of the dunes singing, as we slow down to connect with our inner peace. The silence holds a presence here.",
