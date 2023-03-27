@@ -33,19 +33,14 @@ onMounted(() => {
           <button class="btn btn-dark rounded-5 me-2 px-4">Upcoming</button>
           <button class="btn btn-outline-dark rounded-5 px-4">Learn More</button>
         </div>
-        <!-- <div class="mt-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-            </svg>
-          </div> -->
       </div>
     </div>
 
     <div class="row min-vh-100 position-relative m-3">
-      <img src="https://images.unsplash.com/photo-1554757388-29a2a86ef02f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="position-absolute start-0 top-0 w-100 h-100 p-0 rounded-5" style="z-index: 0; object-fit: cover">
+      <img src="https://images.unsplash.com/photo-1554757388-29a2a86ef02f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="up position-absolute start-0 top-0 w-100 h-100 p-0 rounded-5" style="z-index: 0; object-fit: cover">
     </div>
 
-    <div class="row min-vh-75 m-3 p-4 rounded-5 bg-dark text-light">
+    <div class="up row min-vh-75 m-3 p-4 rounded-5 bg-dark text-light">
       <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center p-4 p-lg-5">
         <h2 class="up h5">About WiWP</h2>
         <p class="up fs-2 lh-1 my-3">Workshops in Wild Places <span style="color: #a1a1a6">is an international art teaching initiative developed by Canadian artist and educator Janice Mason Steeves. Participants travel to remote locations throughout the world to connect with the beauty and power of the wild landscape through the creative process.</span></p>
@@ -56,19 +51,20 @@ onMounted(() => {
       </div>
     </div>
     
-    <div class="row min-vh-75 m-3 p-4 rounded-5 border shadow-lg"
+    <div class="up row min-vh-75 m-3 p-4 rounded-5 border shadow-lg"
     :class="index % 2 === 0 ? 'bg-light' : 'bg-dark text-light'"
     v-for="(trip, index) in tripData" :key="index">
-      <div class="w-100 d-flex flex-wrap flex-md-nowwrap" v-if="index % 2 === 0">
-        <div class="col-lg-6 min-vh-50 rounded-5 shadow" :style="{ 'background' : 'url('+ trip.image1 + ')', 'background-size' : 'cover'}">
+      <div class="up w-100 d-flex flex-wrap flex-md-nowwrap" 
+      v-if="trip && index % 2 === 0">
+        <div class="up col-lg-6 min-vh-50 rounded-5 shadow" :style="{ 'background' : 'url('+ trip.image1 + ')', 'background-size' : 'cover'}">
         </div>
         <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-start p-5">
-          <h5>WiWP</h5>
-          <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">{{ trip.location }}</h2>
-          <h3 class="fw-bold text-secondary">{{ trip.name }}</h3>
-          <p class="text-uppercase">{{ trip.date }}</p>
+          <h5 class="up">WiWP</h5>
+          <h2 class="up display-2 fw-bold lh-1" style="letter-spacing: -3px;">{{ trip.location }}</h2>
+          <h3 class="up fw-bold text-secondary">{{ trip.name }}</h3>
+          <p class="up text-uppercase">{{ trip.date }}</p>
           <router-link :to="'/' + trip.slug">
-            <button class="btn btn-dark rounded-5 px-5">More</button>
+            <button class="up btn btn-dark rounded-5 px-5">More</button>
           </router-link>
         </div>
       </div>
