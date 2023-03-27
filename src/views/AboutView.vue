@@ -27,7 +27,7 @@ onMounted(() => {
     <div class="row min-vh-100 pt-3 pt-lg-5">
       <div class="col-lg-8 offset-md-2 d-flex flex-column justify-content-center align-items-center text-center p-5">
         <h5>Workshops in Wild Places</h5>
-        <h1 class="display-1 lh-1 fw-bold" style="letter-spacing: -3px;">Connecting artists with the land in remote, <span class="fw-bold" style="color: hotpink">wild</span> locations worldwide.</h1>
+        <h1 class="display-1 lh-1 fw-500" style="letter-spacing: -3px;">Connecting artists with the land in remote, <span class="fw-500" style="color: hotpink">wild</span> locations worldwide.</h1>
         <p class="fs-4 text-secondary mt-3">Travel to wild destinations in guided group workshops exploring the spirit of place through art and the creative process.</p>
         <div class="d-flex mt-3">
           <button class="btn btn-dark rounded-5 me-2 px-4">Upcoming</button>
@@ -60,8 +60,8 @@ onMounted(() => {
         </div>
         <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-start p-5">
           <h5 class="up">WiWP</h5>
-          <h2 class="up display-2 fw-bold lh-1" style="letter-spacing: -3px;">{{ trip.location }}</h2>
-          <h3 class="up fw-bold text-secondary">{{ trip.name }}</h3>
+          <h2 class="up display-2 fw-500 lh-1" style="letter-spacing: -3px;">{{ trip.location }}</h2>
+          <h3 class="up fw-500 text-secondary">{{ trip.name }}</h3>
           <p class="up text-uppercase">{{ trip.date }}</p>
           <router-link :to="'/' + trip.slug">
             <button class="up btn btn-dark rounded-5 px-5">More</button>
@@ -72,8 +72,8 @@ onMounted(() => {
       <div v-else class="w-100 d-flex flex-wrap flex-md-nowwrap">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-start p-5">
           <h5>WiWP</h5>
-          <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">{{ trip.location }}</h2>
-          <h3 class="fw-bold text-secondary">{{ trip.name }}</h3>
+          <h2 class="display-2 fw-500 lh-1" style="letter-spacing: -3px;">{{ trip.location }}</h2>
+          <h3 class="fw-500 text-secondary">{{ trip.name }}</h3>
           <p class="text-uppercase">{{ trip.date }}</p>
           <router-link :to="'/' + trip.slug">
             <button class="btn btn-light rounded-5 px-5">More</button>
@@ -86,7 +86,7 @@ onMounted(() => {
 
     <div class="row m-3 rounded-5 bg-light border shadow-lg">
       <div class="col-lg-12 text-center p-5">
-        <h2 class="display-3 fw-bold lh-1" style="letter-spacing: -3px;">What People are Saying</h2>
+        <h2 class="display-3 fw-500 lh-1" style="letter-spacing: -3px;">What People are Saying</h2>
         <p class="fs-5 mb-0 mt-3">Workshops in Wild Places participant testimonials</p>
       </div>
       <div class="col-lg-12 p-0 min-vh-50">
@@ -98,8 +98,8 @@ onMounted(() => {
               v-for="(item, index) in carouselData.carousel" :key="index"
               :style="{ 'background-image': 'url(' + item.image + ')', backgroundSize: 'cover' }">
               <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start bg-dark text-light p-5 m-3 rounded-5 shadow">
-                <h4 class="h2 fw-bold">{{ item.name }} <span class="fw-light fs-5">{{ item.age }}</span></h4>
-                <p class="fw-bold">{{ item.trip }}</p>
+                <h4 class="h2 fw-500">{{ item.name }} <span class="fw-light fs-5">{{ item.age }}</span></h4>
+                <p class="fw-500">{{ item.trip }}</p>
                 <p class="fst-italic">"{{ item.text }}"</p>
                 <!-- <p>{{ item.image }}</p> -->
                 <span class="text-warning fs-5">⭑ ⭑ ⭑ ⭑ ⭑</span>
@@ -135,7 +135,7 @@ onMounted(() => {
     <div class="row m-3 rounded-5 bg-light border border-secondary">
       <div class="col-lg-5 d-flex flex-column justify-content-center align-items-start p-5 rounded-5 bg-dark text-light">
         <p class="mb-0 lh-1">Join my</p>
-        <h3 class="display-4 fw-bold">Newsletter</h3>
+        <h3 class="display-4 fw-500">Newsletter</h3>
       </div>
       <div class="col-lg-7 d-flex flex-column justify-content-center align-items-start p-5">
         <div id="mc_embed_signup" class="w-100">
@@ -159,7 +159,7 @@ onMounted(() => {
     <footer>
       <div class="row min-vh-50 m-3 p-4 rounded-5 bg-dark">
       <div class="col-lg-3 d-flex flex-column justify-content-center align-items-start text-light p-5">
-        <h3 class="fw-bold">WiWP</h3>
+        <h3 class="fw-500">WiWP</h3>
         <ul class="list-unstyled fs-5">
           <li>Home</li>
           <li>About</li>
@@ -168,7 +168,7 @@ onMounted(() => {
         </ul>
       </div>
       <div class="col-lg-3 d-flex flex-column justify-content-center align-items-start text-light p-5">
-        <h3 class="fw-bold">Workshops</h3>
+        <h3 class="fw-500">Workshops</h3>
         <ul class="list-unstyled fs-5">
           <li>Scotland</li>
           <li>Italy</li>
@@ -177,7 +177,7 @@ onMounted(() => {
         </ul>
       </div>
       <div class="col-lg-3 d-flex flex-column justify-content-center align-items-start text-light p-5">
-        <h3 class="fw-bold">Contact</h3>
+        <h3 class="fw-500">Contact</h3>
         <ul class="list-unstyled fs-5">
           <li>Instagram</li>
           <li>Facebook</li>

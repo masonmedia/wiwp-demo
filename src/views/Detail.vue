@@ -77,11 +77,11 @@ onMounted(() => {})
         <!-- :style="{ 'background-image' : 'linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(' + destination.image1 + ')', '' : 'cover' }" -->
         <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center p-5">
           <img :src="destination.image1" class="rounded-4 shadow mb-3" style="width: 110px; height: 110px" alt="">
-          <h3 class="fw-bold text-secondary">{{ destination.name }}</h3>
-          <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">{{ destination.location }}</h2>         
-          <p class="up fs-5 text-dark fw-bold mt-2 mb-3">{{ destination.date }}</p>
+          <h3 class="fw-500 text-secondary">{{ destination.name }}</h3>
+          <h2 class="display-2 fw-500 lh-1" style="letter-spacing: -3px;">{{ destination.location }}</h2>         
+          <p class="up fs-5 text-dark fw-500 mt-2 mb-3">{{ destination.date }}</p>
           <p class="up fs-2 lh-1 mb-4 text-secondary">{{ destination.description }}</p>
-          <div class="hstack gap-2 col-lg-8 offset-lg-2 d-flex bg-secondary rounded-4 shadow mx-auto p-2">
+          <div class="hstack gap-2 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 d-flex bg-secondary rounded-4 shadow mx-auto p-2">
             <button class="btn btn-outline-light px-4 rounded-4 w-75">Book</button>
             <button class="btn btn-outline-light px-4 rounded-4 w-75">Itinerary</button>
             <button class="btn btn-outline-light px-4 rounded-4 w-75"
@@ -105,10 +105,10 @@ onMounted(() => {})
       
       <div class="row min-vh-75 m-3">
         <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center p-5">
-          <h3 class="fw-bold text-secondary">{{ destination.name }}</h3>
-          <h2 class="display-4 fw-bold lh-1" style="letter-spacing: -3px;">{{ destination.title }}</h2>
+          <h3 class="fw-500 text-secondary">{{ destination.name }}</h3>
+          <h2 class="display-4 fw-500 lh-1" style="letter-spacing: -3px;">{{ destination.title }}</h2>
           <p class="up fs-2 lh-1 my-3 text-secondary">{{ destination.details }}</p>
-          <div class="hstack gap-2 d-flex mt-3 bg-secondary rounded-4 shadow w-75 mx-auto p-2">
+          <div class="hstack gap-2 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 d-flex mt-3 bg-secondary rounded-4 shadow mx-auto p-2">
             <button class="btn btn-outline-light px-4 rounded-4 w-75">Book</button>
             <button class="btn btn-outline-light px-4 rounded-4 w-75">Itinerary</button>
             <button class="btn btn-outline-light px-4 rounded-4 w-75">Contact</button>
@@ -123,10 +123,10 @@ onMounted(() => {})
 
       <div class="row min-vh-75">
         <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center p-5">
-          <h3 class="fw-bold text-secondary">{{ destination.name }}</h3>
-          <h2 class="display-4 fw-bold lh-1" style="letter-spacing: -3px;">Accommodation</h2>
+          <h3 class="fw-500 text-secondary">{{ destination.name }}</h3>
+          <h2 class="display-4 fw-500 lh-1" style="letter-spacing: -3px;">Accommodation</h2>
           <p class="up fs-2 lh-1 my-2 text-secondary">{{ destination.accommodation }}</p>
-          <div class="hstack gap-2 d-flex mt-3 bg-secondary rounded-4 shadow w-75 mx-auto p-2">
+          <div class="hstack gap-2 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 d-flex mt-3 bg-secondary rounded-4 shadow mx-auto p-2">
             <button class="btn btn-outline-light px-4 rounded-4 w-75">Book</button>
             <button class="btn btn-outline-light px-4 rounded-4 w-75">Itinerary</button>
             <button class="btn btn-outline-light px-4 rounded-4 w-75">Contact</button>
@@ -144,7 +144,7 @@ onMounted(() => {})
         <div class="modal-dialog modal-fullscreen">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">{{ destination.location }}, <span class="fw-bold">{{ destination.name }}</span>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">{{ destination.location }}, <span class="fw-500">{{ destination.name }}</span>
               </h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -160,8 +160,8 @@ onMounted(() => {})
               <div class="" v-if="destinationDetails.query">
                 <div class="text-start col-md-10 p-5"
                 v-for="(item, index) in destinationDetails.query.pages">
-                <h3 class="h4 fw-bold text-secondary">Details</h3>
-                <h2 class="display-4 fw-bold lh-1 pb-3" style="letter-spacing: -3px;" v-html="item.title"></h2>  
+                <h3 class="h4 fw-500 text-secondary">Details</h3>
+                <h2 class="display-4 fw-500 lh-1 pb-3" style="letter-spacing: -3px;" v-html="item.title"></h2>  
                 <p class="up fs-3 lh-1 my-3" style="color: #a1a1a6" >{{ shorten(item.extract, 1000) + '...' }}</p>
                 <!-- <p class="up fs-3 lh-1 my-3" style="color: #a1a1a6" >{{ item.extract.substring(0,800) + '...' }}</p> -->
                 <div class="hstack gap-2">
@@ -174,7 +174,7 @@ onMounted(() => {})
 
                 <!-- <div v-for="i in item">
                   <p>{{i.from}}</p>
-                  <h2 class="display-4 fw-bold lh-1" style="letter-spacing: -3px;" v-html="i.title"></h2>  
+                  <h2 class="display-4 fw-500 lh-1" style="letter-spacing: -3px;" v-html="i.title"></h2>  
                   <p class="up fs-3 lh-1 my-3" style="color: #a1a1a6" 
                   v-html="i.extract"></p>  
                   <div class="hstack gap-2">
@@ -187,7 +187,7 @@ onMounted(() => {})
                 </div>
 
                 <!-- <span v-for="(i, index) in item.pages">
-                  <h2 class="display-4 fw-bold lh-1" style="letter-spacing: -3px;" v-html="i.title"></h2>  
+                  <h2 class="display-4 fw-500 lh-1" style="letter-spacing: -3px;" v-html="i.title"></h2>  
                   <p class="up fs-3 lh-1 my-3" style="color: #a1a1a6" v-html="i.extract.substring(0, 1000) + '...'"></p>  
                   <div class="hstack gap-2">
                     <button type="button" class="btn btn-secondary px-4 mt-2 rounded-5" data-bs-dismiss="modal">Close</button>
@@ -205,16 +205,16 @@ onMounted(() => {})
 
       <div class="row m-3">
         <div class="col-sm-12 p-5 text-center">
-          <h4 class="fw-bold text-secondary mb-0">WiWP</h4>
-          <h2 class="display-4 fw-bold mb-3" style="letter-spacing: -3px;">Explore</h2>
+          <h4 class="fw-500 text-secondary mb-0">WiWP</h4>
+          <h2 class="display-4 fw-500 mb-3" style="letter-spacing: -3px;">Explore</h2>
           <p class="up fs-2 lh-1 my-2 text-secondary">Browse upcoming workshops in the in WiWP catalogue</p>
         </div>
         <div class="col-lg-3 p-0 up" v-for="(trip, index) in tripData" :key="index">
         <div class="p-3 m-2 rounded-5 bg-light shadow border" style="min-height: 200px">
           <div class="up rounded-5 shadow" style="min-height: 200px;" :style="{ 'background' : 'url('+ trip.image1 +')', 'background-size' : 'cover'}"></div>
           <div class="p-3 py-4">
-            <h4 class="h2 fw-bold mb-1" style="letter-spacing: -1px;">{{ trip.name }}</h4>
-            <p class="my-1 fw-bold text-secondary">{{ trip.location }}</p>
+            <h4 class="h2 fw-500 mb-1" style="letter-spacing: -1px;">{{ trip.name }}</h4>
+            <p class="my-1 fw-500 text-secondary">{{ trip.location }}</p>
             <p>{{ trip.date }}</p>
             <router-link :to="'/' + trip.slug">
               <button class="btn btn-secondary px-4 rounded-5">More</button>
@@ -233,8 +233,8 @@ onMounted(() => {})
         </div>
         <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-start p-5">
           <h5>WiWP</h5>
-          <h2 class="display-2 fw-bold lh-1" style="letter-spacing: -3px;">{{ trip.location }}</h2>
-          <h3 class="fw-bold text-secondary">{{ trip.name }}</h3>
+          <h2 class="display-2 fw-500 lh-1" style="letter-spacing: -3px;">{{ trip.location }}</h2>
+          <h3 class="fw-500 text-secondary">{{ trip.name }}</h3>
           <p class="text-uppercase">{{ trip.date }}</p>
           <router-link :to="'/' + trip.slug">
             <button class="btn btn-dark rounded-5 px-5">More</button>
@@ -246,7 +246,7 @@ onMounted(() => {})
       <footer>
       <div class="row min-vh-50 m-3 p-4 rounded-5 bg-dark">
       <div class="col-lg-3 d-flex flex-column justify-content-center align-items-start text-light p-4 p-lg-5">
-        <h3 class="fw-bold">WiWP</h3>
+        <h3 class="fw-500">WiWP</h3>
         <ul class="list-unstyled fs-5">
           <li>Home</li>
           <li>About</li>
@@ -255,7 +255,7 @@ onMounted(() => {})
         </ul>
       </div>
       <div class="col-lg-3 d-flex flex-column justify-content-center align-items-start text-light p-4 p-lg-5">
-        <h3 class="fw-bold">Workshops</h3>
+        <h3 class="fw-500">Workshops</h3>
         <ul class="list-unstyled fs-5">
           <li class="nav-item" v-for="(trip, index) in tripData" :key="index">
             <router-link class="nav-link fs-5 lh-base" :to="'/' + trip.slug">{{ trip.name }}</router-link>
@@ -263,7 +263,7 @@ onMounted(() => {})
         </ul>
       </div>
       <div class="col-lg-3 d-flex flex-column justify-content-center align-items-start text-light p-4 p-lg-5">
-        <h3 class="fw-bold">Contact</h3>
+        <h3 class="fw-500">Contact</h3>
         <ul class="list-unstyled fs-5">
           <li>Instagram</li>
           <li>Facebook</li>
