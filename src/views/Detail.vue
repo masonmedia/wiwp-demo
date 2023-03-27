@@ -18,8 +18,17 @@ const destinationQuery = destination.query
   //  function fetchArticle(id) {
   //     //assign article..
   //  }
-  //  watch('$route.params.articleId', fetchArticle)
-  //  return { article };
+ 
+
+// function trimString(string) {
+//   var trimmedString = string.replace(/^(.{11}[^\s]*).*/, "$1");
+//   // trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
+//   return trimmedString;
+// }
+
+function shorten(text, max) {
+    return text && text.length > max ? text.slice(0, max).split(' ').slice(0, -1).join(' ') : text
+}
 
 // async function getDetail() {
 //     let newId = route.params.slug;
@@ -151,8 +160,10 @@ onMounted(() => {})
               <div class="" v-if="destinationDetails.query">
                 <div class="text-start col-md-10 p-5"
                 v-for="(item, index) in destinationDetails.query.pages">
-                <h2 class="display-4 fw-bold lh-1" style="letter-spacing: -3px;" v-html="item.title"></h2>  
-                <p class="up fs-3 lh-1 my-3" style="color: #a1a1a6" >{{ item.extract.substring(0,800) + '...' }}</p>
+                <h3 class="h4 fw-bold text-secondary">Details</h3>
+                <h2 class="display-4 fw-bold lh-1 pb-3" style="letter-spacing: -3px;" v-html="item.title"></h2>  
+                <p class="up fs-3 lh-1 my-3" style="color: #a1a1a6" >{{ shorten(item.extract, 1000) + '...' }}</p>
+                <!-- <p class="up fs-3 lh-1 my-3" style="color: #a1a1a6" >{{ item.extract.substring(0,800) + '...' }}</p> -->
                 <div class="hstack gap-2">
                     <button type="button" class="btn btn-secondary px-4 mt-2 rounded-5" data-bs-dismiss="modal">Back</button>
                     <a :href="'https://en.wikipedia.org/wiki/' + destination.query" target="_blank">

@@ -24,14 +24,20 @@ onMounted(() => {
 
 <template>
   <div class="container-fluid px-0">
-    <div class="row min-vh-100">
-      <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start p-5">
+    <div class="row min-vh-100 pt-3 pt-lg-5">
+      <div class="col-lg-8 offset-md-2 d-flex flex-column justify-content-center align-items-center text-center p-5">
         <h5>Workshops in Wild Places</h5>
         <h1 class="display-1 lh-1 fw-bold" style="letter-spacing: -3px;">Connecting artists with the land in remote, <span class="fw-bold" style="color: hotpink">wild</span> locations worldwide.</h1>
+        <p class="fs-4 text-secondary mt-3">Travel to wild destinations in guided group workshops exploring the spirit of place through art and the creative process.</p>
         <div class="d-flex mt-3">
           <button class="btn btn-dark rounded-5 me-2 px-4">Upcoming</button>
           <button class="btn btn-outline-dark rounded-5 px-4">Learn More</button>
         </div>
+        <!-- <div class="mt-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+          </div> -->
       </div>
     </div>
 
