@@ -17,8 +17,8 @@ export default function useAnimation () {
                 trigger: layer,
                 // scrub: true,
                 toggleActions: 'play none none reverse',
-                start: "top bottom",
-                // start:"top 100%",
+                // start: "top bottom",
+                start:"top 100%",
                 end:"bottom top",
             }
             });

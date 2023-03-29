@@ -69,27 +69,27 @@ onMounted(() => {
         </div>
       </div>
 
-      <div v-else class="w-100 d-flex flex-wrap flex-md-nowwrap">
+      <div v-else class="up w-100 d-flex flex-wrap flex-md-nowwrap">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-start p-5">
-          <h5>WiWP</h5>
-          <h2 class="display-2 fw-500 lh-1" style="letter-spacing: -3px;">{{ trip.location }}</h2>
-          <h3 class="fw-500 text-secondary">{{ trip.name }}</h3>
-          <p class="text-uppercase">{{ trip.date }}</p>
+          <h5 class="up">WiWP</h5>
+          <h2 class="up display-2 fw-500 lh-1" style="letter-spacing: -3px;">{{ trip.location }}</h2>
+          <h3 class="up fw-500 text-secondary">{{ trip.name }}</h3>
+          <p class="up text-uppercase">{{ trip.date }}</p>
           <router-link :to="'/' + trip.slug">
-            <button class="btn btn-light rounded-5 px-5">More</button>
+            <button class="up btn btn-light rounded-5 px-5">More</button>
           </router-link>
         </div>
-        <div class="col-lg-6 min-vh-50 rounded-5 shadow" :style="{ 'background' : 'url('+ trip.image1 +')', 'background-size' : 'cover'}">
+        <div class="up col-lg-6 min-vh-50 rounded-5 shadow" :style="{ 'background' : 'url('+ trip.image1 +')', 'background-size' : 'cover'}">
         </div>
     </div>
     </div>
 
-    <div class="row m-3 rounded-5 bg-light border shadow-lg">
+    <div class="up row m-3 rounded-5 bg-light border shadow-lg">
       <div class="col-lg-12 text-center p-5">
-        <h2 class="display-3 fw-500 lh-1" style="letter-spacing: -3px;">What People are Saying</h2>
-        <p class="fs-5 mb-0 mt-3">Workshops in Wild Places participant testimonials</p>
+        <h2 class="up display-3 fw-500 lh-1" style="letter-spacing: -3px;">What People are Saying</h2>
+        <p class="up fs-5 mb-0 mt-3">Workshops in Wild Places participant testimonials</p>
       </div>
-      <div class="col-lg-12 p-0 min-vh-50">
+      <div class="up col-lg-12 p-0 min-vh-50">
         <div class="mx-3 mb-3">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">

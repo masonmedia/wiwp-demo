@@ -1,9 +1,11 @@
 <template>
   <div class="container-fluid px-0">
-    <div class="row min-vh-100 m-3 pt-4 pt-lg-5">
+    <div class="row min-vh-100 m-3 pt-5">
       <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start p-5">
         <h5>Workshops in Wild Places</h5>
-        <h1 class="display-2 lh-1 fw-500" style="letter-spacing: -3px;">Connecting artists with the land in remote, <span style="color: hotpink">wild</span> locations worldwide.</h1>
+        <h1 class="display-3 lh-1 fw-500" style="letter-spacing: -3px;">Connecting artists with the land in remote, <span style="color: hotpink">wild</span> locations worldwide.</h1>
+        <p class="fs-5 text-secondary mt-3">Travel to wild destinations in guided group workshops exploring the spirit of place through art and the creative process.</p>
+
         <div class="d-flex mt-3">
           <button class="btn btn-dark rounded-5 me-2 px-4">Upcoming</button>
           <button class="btn btn-outline-dark rounded-5 px-4">Learn More</button>
@@ -48,20 +50,7 @@
           <button class="btn btn-outline-light rounded-5 px-4 mt-2">Workshops</button>
         </div>
       </div>
-      <!-- <div class="col-lg-7 p-0">
-        <img class="h-100 w-100 rounded-5 shadow" style="object-fit: cover" src="https://workshopsinwildplaces.com/assets/img/cornwall-earth-pigments.jpg" alt="...">
-      </div> -->
     </div>
-    <!-- <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: #F2E9E4">
-      <div class="col-lg-5 d-flex flex-column justify-content-center align-items-start p-4 p-lg-5">
-        <h2 class="display-3 text-uppercase lh-1" style="letter-spacing: -3px">About</h2>
-        <p class="h5 py-3 pe-4">Workshops in Wild Places is an international art teaching initiative developed by Canadian artist and educator Janice Mason Steeves. Travel to remote locations throughout the world to connect with the beauty and power of the wild landscape.</p>
-        <button class="btn btn-dark rounded-5 px-4">More</button>
-      </div>
-      <div class="col-lg-7 p-0">
-        <img class="h-100 w-100 rounded-5 shadow" style="object-fit: cover" src="https://workshopsinwildplaces.com/assets/img/cornwall-earth-pigments.jpg" alt="...">
-      </div>
-    </div> -->
     
     <div class="row min-vh-75 m-3 p-4 rounded-5" style="background: #C9ADA7">
       <div class="col-lg-6 min-vh-50 rounded-5 shadow" style="background: url('https://workshopsinwildplaces.com/assets/img/jms-wiwp-scotland-banner.jpg') center; background-size: cover">
