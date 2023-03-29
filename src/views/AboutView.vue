@@ -179,7 +179,9 @@ onMounted(() => {
       <div class="col-lg-3 d-flex flex-column justify-content-center align-items-start text-light p-5">
         <h3 class="fw-500">Contact</h3>
         <ul class="list-unstyled fs-5">
+          <a href="https://www.instagram.com/p/Coc8odXvzqg/">
           <li>Instagram</li>
+          </a>
           <li>Facebook</li>
           <li>Archive</li>
           <li>Email</li>

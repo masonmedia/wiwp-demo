@@ -83,7 +83,9 @@ onMounted(() => {})
           <p class="up fs-2 lh-1 mb-4 text-secondary">{{ destination.description }}</p>
           <div class="hstack gap-2 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 d-flex bg-secondary rounded-4 shadow mx-auto p-2">
             <button class="btn btn-outline-light px-4 rounded-4 w-75">Book</button>
+            <!-- <a :href="destination.itinerary" target="_blank"> -->
             <button class="btn btn-outline-light px-4 rounded-4 w-75">Itinerary</button>
+            <!-- </a> -->
             <button class="btn btn-outline-light px-4 rounded-4 w-75"
             @click.passive="getData(destination.query)"
             data-bs-toggle="modal" :data-bs-target="'#item_' + destination.id"

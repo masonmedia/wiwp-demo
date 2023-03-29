@@ -8,6 +8,7 @@ const router = useRouter();
 </script>
 
 <template>
+  <div class="overflow-hidden">
   <header>
     <TheNav></TheNav>
   </header>
@@ -25,6 +26,7 @@ const router = useRouter();
       <component :is="Component" :key="$route.fullPath" />
     </transition>
   </router-view>
+  </div>
 </template>
 
 <style scoped>

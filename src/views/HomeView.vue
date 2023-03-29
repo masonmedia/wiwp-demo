@@ -1,13 +1,19 @@
 <template>
   <div class="container-fluid px-0">
-    <div class="row min-vh-100">
-      <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start p-5">
+    <div class="row min-vh-100 m-3 pt-4 pt-lg-5">
+      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start p-5">
         <h5>Workshops in Wild Places</h5>
-        <h1 class="display-1 lh-1 fw-bold" style="letter-spacing: -3px;">Connecting artists with the land in remote, <span class="fw-bold" style="color: hotpink">wild</span> locations worldwide.</h1>
+        <h1 class="display-2 lh-1 fw-500" style="letter-spacing: -3px;">Connecting artists with the land in remote, <span style="color: hotpink">wild</span> locations worldwide.</h1>
         <div class="d-flex mt-3">
           <button class="btn btn-dark rounded-5 me-2 px-4">Upcoming</button>
           <button class="btn btn-outline-dark rounded-5 px-4">Learn More</button>
         </div>
+      </div>
+      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center p-3">
+        <div class="m-3 w-100 h-100">
+          <img class="w-100 h-100 rounded-5 shadow" style="object-fit: cover" src="https://images.unsplash.com/photo-1456086272160-b28b0645b729?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="">
+        </div>
+        <!-- <img class="w-100 h-100 rounded-5 shadow" style="object-fit: cover" src="https://images.unsplash.com/photo-1456086272160-b28b0645b729?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt=""> -->
       </div>
     </div>
 
